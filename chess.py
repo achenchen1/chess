@@ -1,6 +1,12 @@
 from random import randint
 
 class Game:
+    """
+    Should contain:
+        - The players that are playing
+        - The board state
+        - Whose turn it is
+    """
     def __init__(self, white_player: _Player, black_player: _Player, load_file=None):
         self.white_player = white_player
         self.black_player = black_player
@@ -10,6 +16,8 @@ class Game:
         else:
             self.board, self.turn = self.new_game()
 
+    def new_game(self):
+        board = [[0]]
 
     @classmethod
     def random_colors(cls, player_1, player_2, load_file=None):
