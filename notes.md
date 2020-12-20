@@ -35,4 +35,4 @@ To check for "move-piece-then-king-is-in-check" kind of illegal moves, the plan 
 
     Secondly, we examine cases where the king stumbles into a bad spot;
 
-2. Deciding available moves in general; once a player makes a move, the full list of moves for all the other pieces that belong to that player is calculated. 
+2. Deciding available moves in general; once a player makes a move, the full list of moves for all the other pieces that belong to that player is calculated. Maybe we evaluate the possible moves a piece can make; we check its rank, and if we encounter a rook, we change the rook, and then we check that rook, recursively. Once a piece is done, we set it to a pointer that is marked "done"; if it's in progress, we mark it in progress, and once it's finished evaluating, we change to done. Once the all pieces evaluation status point to done, we change that pointer to "undone", we change the undone pointer to done, and repeat.
