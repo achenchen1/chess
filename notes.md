@@ -2,20 +2,28 @@
 - [chess](#chess)
   - [TODO](#todo)
   - [In Progress](#in-progress)
+    - [Socket server - get it set up](#socket-server---get-it-set-up)
+  - [Archived](#archived)
     - [Move validation](#move-validation)
 
 ## TODO
 - Get the AWS side + DB side set-up
   - Client/server?
   - For DB, we want to fetch games by ID; can we hash the entire game, and then if same game, just store to same ID?
-- Figure out how to parse JSON/write JSON in C++; are there libraries?
+- Figure out how to parse JSON/write JSON in ~~C++~~ Python; are there libraries?
   - Figure out how Lichess/Chess.com store games - want to be able to import into lichess/chess.com
-- Algebraic notation
-- Manipulate console/shell
-- Hash function for sending game state
-- Preview moves
+- ~~Algebraic notation~~
+- ~~Manipulate console/shell~~
+- ~~Hash function for sending game state~~
+- ~~Preview moves~~
+
+Crossed out some, as I think I want to prioritize getting the server and DB up first.
 
 ## In Progress
+
+### Socket server - get it set up
+
+## Archived
 
 ### Move validation
 
